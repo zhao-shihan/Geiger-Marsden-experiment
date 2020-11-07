@@ -1,3 +1,3 @@
-# basic-particle-physics
-Basically nothing.
-So far.
+# Geiger-Marsden-experiment
+Geiger-Marsden experiment simulation.
+With Geant4.
