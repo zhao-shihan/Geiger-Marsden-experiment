@@ -8,9 +8,7 @@
 //定义构造函数
 PhysicsList::PhysicsList() : G4VModularPhysicsList() {
     SetVerboseLevel(1);//指定输出信息的复杂度，越高越复杂，一般设置为1即可
-    RegisterPhysics(new G4DecayPhysics());//指定基本粒子衰变物理过程
     RegisterPhysics(new G4EmStandardPhysics());//指定电磁相互作用物理过程
-    RegisterPhysics(new G4RadioactiveDecayPhysics());//指定放射性核素衰变物理过程
 }
 
 //定义析构函数，一般为空

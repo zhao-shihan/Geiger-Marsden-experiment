@@ -28,12 +28,8 @@ void SteppingAction::UserSteppingAction(const G4Step* step) {
     //获取当前Step所在的Track的父track的id，如果其本身为初级track，则为0
     auto stepId = track->GetCurrentStepNumber();//获取当前Step的id
     auto particleId = track->GetParticleDefinition()->GetParticleName();//获取当前Step的粒子的名称	
-    auto edep = (step->GetTotalEnergyDeposit());//获取在本Step中沉积的能量
     auto energy = (step->GetPreStepPoint()->GetKineticEnergy());//获取当前Step的粒子的动能
 
-    G4cout << evtid << " " << parentId << " " << trackId << " " << stepId << " " << particleId << " " << edep << " " << energy << " " << G4endl;
+    G4cout << evtid << " " << parentId << " " << trackId << " " << stepId << " " << particleId << " " << energy << " " << G4endl;
     //将上述信息输出至显示屏中
-
-    fEventAction->AddEdep(edep);
-    //将本Step中沉积的能量传递至当前Step对应的Event中，在上一篇文章中说明
 }

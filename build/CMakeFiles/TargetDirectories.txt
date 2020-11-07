@@ -1,0 +1,7 @@
+/home/zhaoshihan/文档/Geant4/alphaScatter/build/CMakeFiles/install/strip.dir
+/home/zhaoshihan/文档/Geant4/alphaScatter/build/CMakeFiles/install/local.dir
+/home/zhaoshihan/文档/Geant4/alphaScatter/build/CMakeFiles/install.dir
+/home/zhaoshihan/文档/Geant4/alphaScatter/build/CMakeFiles/list_install_components.dir
+/home/zhaoshihan/文档/Geant4/alphaScatter/build/CMakeFiles/rebuild_cache.dir
+/home/zhaoshihan/文档/Geant4/alphaScatter/build/CMakeFiles/edit_cache.dir
+/home/zhaoshihan/文档/Geant4/alphaScatter/build/CMakeFiles/alphaScatter.dir
