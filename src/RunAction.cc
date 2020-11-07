@@ -1,16 +1,12 @@
 #include "RunAction.hh"//包含对应的头文件
 #include "G4Run.hh"//包含Geant4中输出信息至程序外的G4cout与G4endl所对应的头文件
 
-//RunAction类的构造函数
 RunAction::RunAction() : G4UserRunAction() {}
 
-//RunAction类的析构函数
 RunAction::~RunAction() {}
 
-//成员函数BeginOfRunAction(const G4Run*)的定义
 void RunAction::BeginOfRunAction(const G4Run*) {}
 
-//成员函数EndOfRunAction(const G4Run*)的定义
 void RunAction::EndOfRunAction(const G4Run* run) {
     G4int nofEvents = run->GetNumberOfEvent();//获取本次Run中模拟了多少个event
     if (nofEvents == 0) return;//如果模拟了0个，则返回

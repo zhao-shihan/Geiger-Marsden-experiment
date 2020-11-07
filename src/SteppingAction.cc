@@ -14,10 +14,8 @@
 
 extern int evtid; //声明外部变量，此变量为每个Event对应的序号，在main文件中定义
 
-//SteppingAction类的构造函数
 SteppingAction::SteppingAction(EventAction* eventAction) : G4UserSteppingAction(), fEventAction(eventAction) {}
 
-//SteppingAction类的析构函数
 SteppingAction::~SteppingAction() {}
 
 //成员函数UserSteppingAction(const G4Step* )的定义，形参为当前Step的指针

@@ -3,16 +3,12 @@
 
 int evtid; //声明外部变量，此变量为每个Event对应的序号，在main文件中定义
 
-//EventAction类的构造函数
 EventAction::EventAction() : G4UserEventAction() {}
 
-//EventAction类的析构函数
 EventAction::~EventAction() {}
 
-//成员函数BeginOfEventAction(const G4Event*)的定义
 void EventAction::BeginOfEventAction(const G4Event*) {}
 
-// 成员函数EndOfEventAction(const G4Event*)的定义
 void EventAction::EndOfEventAction(const G4Event*) {
     G4cout
         << " This is " << evtid << " event "
